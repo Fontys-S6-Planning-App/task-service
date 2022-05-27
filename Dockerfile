@@ -1,12 +1,11 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["task-service/task-service.csproj", "task-service/"]
-RUN dotnet restore "task-service/task-service.csproj"
+COPY ["task-service.csproj", "./"]
+RUN dotnet restore "./task-service.csproj"
 COPY . .
 WORKDIR "/src/task-service"
 RUN dotnet build "task-service.csproj" -c Release -o /app/build
