@@ -7,7 +7,7 @@ WORKDIR /src
 COPY ["task-service.csproj", "./"]
 RUN dotnet restore "./task-service.csproj"
 COPY . .
-WORKDIR "/src/task-service"
+WORKDIR "/src/."
 RUN dotnet build "task-service.csproj" -c Release -o /app/build
 
 FROM build AS publish
