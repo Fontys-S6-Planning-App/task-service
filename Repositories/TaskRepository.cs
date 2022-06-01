@@ -15,6 +15,7 @@ public class TaskRepository : ITaskRepository
     
     public List<TaskModel> GetByListId(int listId)
     {
+        Console.WriteLine("get by list id " + listId);
         return _context.Tasks.Where(t => t.ListId == listId).ToList();
     }
 
@@ -32,12 +33,21 @@ public class TaskRepository : ITaskRepository
 
     public void Delete(int taskId)
     {
+        Console.WriteLine("Delete task with id: " + taskId);
         var task = _context.Tasks.Find(taskId);
         if (task == null)
         {
             throw new Exception("Task not found");
         }
         _context.Tasks.Remove(task);
+        _context.SaveChanges();
+    }
+    
+    public void DeleteByListId(int listId)
+    {
+        Console.WriteLine("Delete task with list id: " + listId);
+        var tasks = _context.Tasks.Where(t => t.ListId == listId);
+        _context.Tasks.RemoveRange(tasks);
         _context.SaveChanges();
     }
 }

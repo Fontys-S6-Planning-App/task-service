@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using task_service.DBContexts;
+using task_service.Messaging;
 using task_service.Repositories;
 using task_service.Repositories.Interfaces;
 using task_service.Services;
@@ -31,6 +32,7 @@ builder.Services.AddDbContext<TaskContext>(options => options.UseMySql(connectio
 // Add services to the container.
 builder.Services.AddTransient<ITaskService, TaskService>();
 builder.Services.AddTransient<ITaskRepository, TaskRepository>();
+builder.Services.AddHostedService<MessageReceiver>();
 
 builder.Services.AddControllers();
 

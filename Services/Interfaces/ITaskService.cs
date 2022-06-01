@@ -8,4 +8,5 @@ public interface ITaskService
     void Add(TaskModel task);
     void Update(TaskModel task);
     void Delete(int id);
+    void DeleteByListId(int listId);
 }

@@ -7,5 +7,6 @@ public interface ITaskRepository
     List<TaskModel> GetByListId(int listId);
     void Add(TaskModel task);
     void Update(TaskModel task);
-    void Delete(int listId);
+    void Delete(int taskId);
+    void DeleteByListId(int listId);
 }

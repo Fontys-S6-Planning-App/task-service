@@ -32,4 +32,9 @@ public class TaskService : ITaskService
     {
         _taskRepository.Delete(id);
     }
+    
+    public void DeleteByListId(int listId)
+    {
+        _taskRepository.DeleteByListId(listId);
+    }
 }
