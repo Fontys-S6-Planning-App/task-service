@@ -81,3 +81,4 @@ app.MapControllers();
 app.MapControllerRoute(name: "task", pattern: "task/{controller=Task}/{action=Index}/{id?}");
 
 app.Run();
+public partial class Program { }

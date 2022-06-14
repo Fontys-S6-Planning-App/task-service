@@ -19,6 +19,7 @@
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
         <PackageReference Include="RabbitMQ.Client" Version="6.3.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <InternalsVisibleTo Include="task-service.tests" />
     </ItemGroup>
 
 </Project>
