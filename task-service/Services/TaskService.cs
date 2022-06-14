@@ -15,12 +15,26 @@ public class TaskService : ITaskService
     
     public List<TaskModel> GetByListId(int listId)
     {
-        return _taskRepository.GetByListId(listId);
+        List<TaskModel> tasks = _taskRepository.GetByListId(listId);
+        //if tasks is empty throw not found exception
+        if(tasks.Count > 0)
+        {
+            return tasks;
+        }
+        throw new Exception("No tasks found for list id: " + listId);
     }
 
     public void Add(TaskModel task)
     {
-        _taskRepository.Add(task);
+        //check if task is valid
+        if(task.IsValid())
+        {
+            _taskRepository.Add(task);
+        }
+        else
+        {
+            throw new Exception("Task is not valid");
+        }
     }
 
     public void Update(TaskModel task)

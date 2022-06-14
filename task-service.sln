@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task-service", "task-service\task-service.csproj", "{195B89E9-4DC8-4F5A-A268-76D9EF026BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task-service.tests", "task-service.tests\task-service.tests.csproj", "{9345FEC0-BCC1-433F-BB6B-6B2388D950B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{195B89E9-4DC8-4F5A-A268-76D9EF026BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195B89E9-4DC8-4F5A-A268-76D9EF026BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195B89E9-4DC8-4F5A-A268-76D9EF026BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195B89E9-4DC8-4F5A-A268-76D9EF026BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9345FEC0-BCC1-433F-BB6B-6B2388D950B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9345FEC0-BCC1-433F-BB6B-6B2388D950B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9345FEC0-BCC1-433F-BB6B-6B2388D950B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9345FEC0-BCC1-433F-BB6B-6B2388D950B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
