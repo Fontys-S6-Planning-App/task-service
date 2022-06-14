@@ -32,7 +32,7 @@ public class MessageReceiver : BackgroundService
             _taskService.DeleteByListId(Int32.Parse(message));
         };
         
-        _model.BasicConsume(queue: _queue, autoAck: false, consumer: consumer);
+        _model.BasicConsume(queue: _queue, autoAck: true, consumer: consumer);
         
         return Task.CompletedTask;
     }
