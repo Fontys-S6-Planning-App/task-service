@@ -3,5 +3,12 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.UnitTests.TaskServiceTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.GetByListId_Returns_List_Of_Tasks&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.GetByListId_Returns_404_When_List_Does_Not_Exist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.GetByListId_Returns_401_When_Not_Authorized&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.CreateTask_Returns_200&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.CreateTask_Returns_500_When_Task_Invalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.CreateTask_Returns_Bad_Request_When_Task_Invalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.UpdateTask_Returns_200&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::9345FEC0-BCC1-433F-BB6B-6B2388D950B5::net6.0::task_service.tests.IntegrationTests.TaskServiceIntegrationTests.DeleteTask_Returns_200&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
